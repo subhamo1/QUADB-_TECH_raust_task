@@ -9,7 +9,7 @@ fn is_palindrome(s: &str) -> bool {
     rev_chars.reverse();
     chars == rev_chars
 }
-```
+
 
 Given a sorted array of integers, implement a function that returns the index of the first occurrence of a given number.
 
