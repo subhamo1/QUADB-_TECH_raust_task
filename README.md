@@ -1,7 +1,7 @@
 # QUADB-_TECH_raust_task
 
 ```
-Implement a function that checks whether a given string is a palindrome or not.
+** Implement a function that checks whether a given string is a palindrome or not. **
 
 fn is_palindrome(s: &str) -> bool {
     let mut chars: Vec<char> = s.chars().collect();
