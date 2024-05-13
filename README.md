@@ -1,5 +1,6 @@
 # QUADB-_TECH_raust_task
 
+```
 Implement a function that checks whether a given string is a palindrome or not.
 
 fn is_palindrome(s: &str) -> bool {
@@ -8,6 +9,7 @@ fn is_palindrome(s: &str) -> bool {
     rev_chars.reverse();
     chars == rev_chars
 }
+```
 
 Given a sorted array of integers, implement a function that returns the index of the first occurrence of a given number.
 
