@@ -11,7 +11,7 @@ fn is_palindrome(s: &str) -> bool {
 }
 
 
-Given a sorted array of integers, implement a function that returns the index of the first occurrence of a given number.
+** Given a sorted array of integers, implement a function that returns the index of the first occurrence of a given number.  **
 
 fn find_index(nums: &[i32], target: i32) -> Option<usize> {
     for (i, &n) in nums.iter().enumerate() {
@@ -23,7 +23,7 @@ fn find_index(nums: &[i32], target: i32) -> Option<usize> {
 }
 
 
-Given a string of words, implement a function that returns the shortest word in the string.
+** Given a string of words, implement a function that returns the shortest word in the string. **
 
 fn shortest_word(s: &str) -> &str {
     let mut words = s.split_whitespace();
@@ -36,7 +36,7 @@ fn shortest_word(s: &str) -> &str {
     shortest
 }
 
-Implement a function that checks whether a given number is prime or not.
+** Implement a function that checks whether a given number is prime or not. **
 
 fn is_prime(n: u32) -> bool {
     if n < 2 {
@@ -51,7 +51,7 @@ fn is_prime(n: u32) -> bool {
 }
 
 
-Given a sorted array of integers, implement a function that returns the median of the array.
+** Given a sorted array of integers, implement a function that returns the median of the array. **
 
 fn median(nums: &[i32]) -> f64 {
     let n = nums.len();
@@ -62,7 +62,7 @@ fn median(nums: &[i32]) -> f64 {
     }
 }
 
-Implement a function that finds the longest common prefix of a given set of strings.
+** Implement a function that finds the longest common prefix of a given set of strings. **
 
 fn longest_common_prefix(strs: Vec<String>) -> String {
     if strs.is_empty() {
@@ -90,14 +90,14 @@ fn common_prefix(s1: &str, s2: &str) -> String {
     prefix
 }
 
-Implement a function that returns the kth smallest element in a given array.
+** Implement a function that returns the kth smallest element in a given array. **
 
 fn kth_smallest(nums: &mut [i32], k: usize) -> i32 {
     nums.select_nth_unstable(k - 1);
     nums[k - 1]
 }
 
-Given a binary tree, implement a function that returns the maximum depth of the tree.
+** Given a binary tree, implement a function that returns the maximum depth of the tree. **
 
 use std::cell::RefCell;
 use std::rc::Rc;
@@ -120,13 +120,13 @@ fn max_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
 }
 
 
-Reverse a string in Rust
+** Reverse a string in Rust **
 
 fn reverse_string(s: &str) -> String {
     s.chars().rev().collect()
 }
 
-Check if a number is prime in Rust
+** Check if a number is prime in Rust **
 
 fn is_prime(num: i32) -> bool {
     if num <= 1 {
@@ -141,7 +141,7 @@ fn is_prime(num: i32) -> bool {
 }
 
 
-Merge two sorted arrays in Rust
+** Merge two sorted arrays in Rust **
 
 fn merge_sorted_arrays(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {
     let mut i = m as usize - 1;
@@ -167,7 +167,7 @@ fn merge_sorted_arrays(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i3
 }
 
 
-Find the maximum subarray sum in Rust do this in rust language
+** Find the maximum subarray sum in Rust do this in rust language **
 
 fn max_subarray_sum(nums: &[i32]) -> i32 {
     let mut max_sum = std::i32::MIN;
